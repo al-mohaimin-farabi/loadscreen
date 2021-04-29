@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="keks.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="main-title">
+		<h1><span>🏎FAST AND FURIOUS</span> BD STYLE🏎</h1>
+	</div>
+	<div class="info-con">
+		<p>Hi Everyone! Are You All Ready For The Adrenalin Rush Of Racing? <br> Then You Are Welcome To The First Ever Racing RP Server Of Bangladesh <br><span>Fast & Furious BD Style.</span></p> 
+		<div class="contact">
+			<a href="https://discord.gg/T8hPBWGH8z" target="_blank" class="btn">Join our discord</a>
+		</div>	
+	<div id="mySidebar" class="sidebar">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  		<div class="deb-info">
+  			<h1>our <span>team</span></h1>
+  			<ul>
+  				<li><a href="#">Tanmoy</a></li>
+  				<li><a href="#">BoRo-BHAI</a></li>
+  				<li><a href="#">Achilies</a></li>
+  				<li><a href="#">Tofa029</a></li>
+  			</ul>
+  			<h3>basic keybinds</h3>
+  			<ol class="bas-co">
+  				<li class="com">press</li>
+  				<li>M for open V menu</li>
+  				<li>K for setbelt</li>
+  				<li>f3 for emote</li>
+  			</ol>
+  			<h3>basic command</h3>
+  			<ol class="bas-co">
+  				<li class="com">t/</li>
+  				<li>car</li>
+  				<li>fix</li>
+  				<li>dv</li>
+  				<li>clean</li>
+  			</ol>
+  		</div>
+    </div>
+    <div id="main">
+ 	  <button class="openbtn" onclick="openNav()">More About US</button>  
+     </div>
+	</div>
+<!-- 	<div class="animated-text">
+      <div class="line">tanmoy is trying to break into your head</div>
+      <div class="line">Hack detected Banning in 5 sec</div>
+      <div class="line">Achilles just got the pass of your pc</div>
+      <div class="line">boro bhai is the smallest one in team(exposed)</div>
+      <div class="line">shakib sir just blew us with tank</div>
+      <div class="line">arman wanna ride, but not with you baby girl</div>
+      <div class="line">zyrox: uff cought kheye gelam</div>
+      <div class="line">gamX: ami plat bro</div>
+    </div> -->
+
+    <div class="aduio">
+	   <audio  controls loop autoplay>
+		 <source src="intro.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+	<div class="loadbar">
+		<div class="progressBar"></div>
+    </div>
+	<script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "500px";
+        document.getElementById("main").style.marginLeft = "0px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+    </script>
+    <!-- <script>
+    	var count = 0;
+		var thisCount = 0;
+		const handlers = {
+    startInitFunctionOrder(data) {
+        count = data.count;
+    },
+
+    initFunctionInvoking(data) {
+        document.querySelector('.progressBar').style.left = '0%';
+        document.querySelector('.progressBar').style.width = ((data.idx / count) * 100) + '%';
+    },
+
+    startDataFileEntries(data) {
+        count = data.count;
+    },
+
+    performMapLoadFunction(data) {
+        ++thisCount;
+        document.querySelector('.progressBar').style.left = '0%';
+        document.querySelector('.progressBar').style.width = ((thisCount / count) * 100) + '%';
+    },
+	};
+	window.addEventListener('message', function (e) {
+    (handlers[e.data.eventName] || function () { })(e.data);});
+    </script> -->
+</body>
+</html>

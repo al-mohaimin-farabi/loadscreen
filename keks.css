@@ -1,0 +1,345 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+body {
+  overflow: hidden; /* Hide scrollbars */
+  background: url(intro.gif) no-repeat center top ;
+  background-size: cover;
+  background-blend-mode: screen;
+  /*background:black;*/
+}
+@font-face{
+	font-family:'Bankgothic Regular';
+	src:url('bankgothic.ttf');
+}
+.main-title{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.main-title h1{
+	line-height: 0px;
+	font-family:'Bankgothic Regular';
+	color:crimson;
+	position: relative;
+	transition: 1s ease;
+}
+.main-title h1 span{
+	line-height: 0px;
+	font-family:'Bankgothic Regular';
+	color:#006a4e;
+	transition: 1s ease;
+}
+.main-title h1:hover {
+	cursor: pointer;
+	color:#006a4e;
+}
+.main-title h1:hover span {
+	cursor: pointer;
+	color:crimson;
+}
+.main-title h1 span:hover {
+	cursor: pointer;
+	color:crimson;
+}
+.main-title h1::after{
+	content:"";
+	position: absolute;
+	background-color:crimson;
+	width: 0%;
+	height: 3px;
+	left:0;
+	bottom:-25px;
+	transition: 1s ease-out;
+}
+.main-title h1::before{
+	content:"";
+	position: absolute;
+	background-color:#006a4e;
+	width:0%;
+	height: 3px;
+	right:0;
+	bottom:-25px;
+	transition: 1s ease-out;
+}
+.main-title h1:hover:after{
+	content:"";
+	position: absolute;
+	background-color:crimson;
+	width: 50%;
+	height: 3px;
+	left:0;
+	bottom:-25px;
+}
+.main-title h1:hover:before{
+	content:"";
+	position: absolute;
+	background-color:#006a4e;
+	width: 50%;
+	height: 3px;
+	right:0;
+	bottom:-25px;
+}
+.info-con {
+	width: 100%;
+	height: 500px;
+	/*background-color: red;*/
+	text-align: left;
+	font-family:'Bankgothic Regular';
+}
+.info-con p{
+	padding: 10px 0px 35px;
+	font-size: 28px;
+	color: white;
+	font-weight: 400;
+	text-shadow: 3px 3px 2px black;
+	margin: 20px 0px 0px 10px;
+}
+.info-con p span{
+	padding: 25px 0px;
+	font-size: 28px;
+	color: yellow;
+	font-weight: 900;
+}
+.contact {
+	width: 100%;
+	padding: 10px 0px;
+
+}
+.contact .btn {
+	text-decoration: none;
+	color:black;
+	padding: 15px 8px;
+	background-color: crimson;
+	border-radius: 5px;
+	border:3px solid transparent;
+	transition: 1s;
+	margin-left: 10px;
+	font-size: 20px;
+}
+.contact .btn:hover {
+	text-decoration: none;
+	color:black;
+	padding: 15px 8px;
+	background-color: crimson;
+	border-radius: 5px;
+	border:3px solid #006a4e;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  top: 0;
+  right:-10px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  border-left: 4px solid crimson;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+    text-decoration: none;
+    color: black;
+    padding: 12px 18px;
+    background-color: #006a4e;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    transition: 1s;
+    font-family:'Bankgothic Regular';
+    font-size: 20px;
+    margin-left: -5px;
+}
+
+.openbtn:hover {
+  	text-decoration: none;
+  	color:black;
+  	padding: 12px 18px;
+ 	background-color: #006a4e;
+ 	border-radius: 5px;
+	border:3px solid crimson;
+	font-size: 20px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.deb-info h1 {
+	line-height: 0px;
+	font-family:'Bankgothic Regular';
+	color:crimson;
+	position: relative;
+	transition: 1s ease;
+	margin:20px 0px;
+}
+.deb-info h1 span{
+	line-height: 0px;
+	font-family:'Bankgothic Regular';
+	color:#006a4e;
+	transition: 1s ease;
+	text-align: center;
+}
+
+.aduio {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top:280px;
+}
+h3{
+	color:#006a4e !important;
+	padding:10px 0px 0px;
+	border-top: 2px solid #006a4e;
+	margin:10px 0px 0px;
+}
+
+.com {
+	color:white ;
+	font-weight: 600;
+	padding: 10px 0px;
+}
+.bas-co {
+	color:crimson;
+}
+/**.animated-text{
+  color: red;
+  position: absolute;
+  bottom: 4%;
+  right: -23%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 10px 0px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.line{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-family:'Bankgothic Regular';*
+  line-height: 80px;
+}
+
+.line:first-child{
+  animation: anim 25s infinite ;
+  animation-delay: 10ms;
+}
+
+@keyframes anim {
+  0%{
+    margin-top: 0;
+  }
+  5%{
+    margin-top: -20px;
+  }
+  15%{
+    margin-top: -50px;
+  }
+  30%{
+    margin-top: -100px;
+  }
+  50%{
+    margin-top: -140px;
+  }
+  60%{
+    margin-top: -190px;
+  }
+  75%{
+    margin-top: -240px;
+  }
+  90%{
+    margin-top: -290px;
+  }
+  100%{
+    margin-top: -340px;
+  }
+   120%{
+    margin-top: -390px;
+  }
+
+  140%{
+    margin-top: -340px;
+  }
+  185%{
+    margin-top: -290px;
+  }
+  200%{
+    margin-top: -240px;
+  }
+  230%{
+    margin-top: -190px;
+  }
+  290%{
+    margin-top: -140px;
+  }
+  340%{
+    margin-top: -100px;
+  }
+  390%{
+    margin-top: -50px;
+  }
+  440%{
+    margin-top: -20px;
+  }
+  490%{
+    margin-top: 0;
+  }
+
+}
+.loadbar {
+    width: 100%;
+    background-color: #eee;
+    height: 20px;
+
+    margin-left: 2px;
+    margin-right: 3px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    overflow: hidden;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+
+.progressBar {
+    width: 10%;
+    background-color: #FC0349;
+    height: 20px;
+
+    position: absolute;
+    left: 10%;
+}*/
